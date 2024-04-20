@@ -1,0 +1,381 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./aboutus.css">
+    <!-- Load an icon library -->
+    <link rel="stylesheet" href="./bootstrap-4.4.1-dist/bootstrap-4.4.1-dist/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Start navBar */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-transform: capitalize;
+  background-color: #74d4be5a;
+}
+nav h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #004f3c;
+  cursor: pointer;
+  margin-left: 20px;
+  border: 1px solid #004f3c;
+  padding: 20px;
+  border-radius: 25px;
+  transition: all 1s;
+  flex-basis: 10%;
+}
+nav h1:hover {
+  transform: scale(1.1);
+  border: 1px solid #00ffc3;
+  background-color: #049472;
+  color: #00ffc3;
+}
+nav ul {
+  display: flex;
+  flex-basis: 70%;
+  list-style: none;
+  justify-content:  space-evenly;
+  padding-left: 0;
+}
+/* nav ul li {
+  margin: 0  5em;
+  padding-right: 20px;
+} */
+nav ul li a,
+h2 {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #013228;
+}
+nav ul li a:hover,
+h2 i:hover {
+  border-bottom: 3px solid #013228;
+}
+nav ul li:last-child:hover {
+  transition: ease-in-out 1s;
+  cursor: pointer;
+}
+
+nav h2 {
+  width: fit-content;
+  /* flex-basis: 15%; */
+  text-align: center;
+}
+nav h2 a {
+  padding-right: 15px;
+  text-decoration: none;
+  color: #000;
+}
+nav h2 a:hover i{
+  transition: 1s;
+  transform: rotateX(360deg);
+ 
+}
+/* End navBar */
+
+    </style>
+
+    <title>About Us</title>
+</head>
+
+<body>
+
+    <!--1. -----------------------------------=====----------------------------------- -->
+
+    <!-- alert at the start  -->
+    <div class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        You Can Sign up or Log in from here
+        <a href="../login-register/prj.html" style="color:gray">Log In / Sign Up</a>    
+
+    </div>
+
+    <!--2. -----------------------------------=====----------------------------------- -->
+    <!-- Nav Bar -->
+    <!-- <div class="navbar">
+        <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
+        <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
+        <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+        <a href="#"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+        <div class="dropdown">
+            <button class="dropbtn">Who Are We
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <h3 style="padding: 5%;">Who Are We</h3>
+                <hr>
+                <a href="#">Our Team</a>
+                <a href="#">Our Location</a>
+                <a href="#">Our Mission</a>
+                <a href="#">Our Vision</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">What We Do
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <h3 style="padding: 5%;">What We Do</h3>
+                <hr>
+                <a href="#">Products</a>
+                <a href="#">Brands</a>
+                <a href="#">Merchants</a>
+                <a href="#">Suppliers</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Our Impact
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <h3 style="padding: 5%;">Our Impact</h3>
+                <hr>
+                <a href="#">Compunity Impact</a>
+                <a href="#">Economic Impact</a>
+                <a href="#">Empowermwnt</a>
+                <a href="#">Planet Impact</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Follow US
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <h3 style="padding: 5%;">Social Media</h3>
+                <hr>
+                <a href="#">Face Book <i class="fa-brands fa-facebook"></i> </a>
+                <a href="#">Twitter <i class="fa-brands fa-twitter"></i></a>
+                <a href="#">Instagram <i class="fa-brands fa-instagram"></i></a>
+                <a href="#">Whatsapp <i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+
+        <div class="search-container">
+            <form action="#">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div> -->
+    
+    <nav>
+        <h1>El Mexiki</h1>
+        <ul>
+            <li><a href="../index.html">home</a></li>
+            <li><a href="../index.html">Categories</a></li>
+            <li><a href="./AboutUs/About us.html">News</a></li>
+            <li><a href="./AboutUs/Main aboutus.html">About Us</a></li>
+            <li><a href="../login-register/prj.html" style="font-size: large;text-align: center;"><i
+                        class="fa-solid fa-user"></i></a></li>
+        </ul>
+        <h2><a href="../Cart/Cart.html" target="_self" rel="noopener noreferrer"><i class="fa fa-shopping-cart"
+                    aria-hidden="true"></i></a></h2>
+    </nav>
+    <!--3. -----------------------------------=====----------------------------------- -->
+    <div class="split-container">
+        <div class="left">
+            <div class="left-left">
+                <h3 style="align-items: center;">Top News</h3>
+                <!-- Section Latest news -->
+                <div class="latestNews">
+                    <a href="https://www.eetimes.com/eliyan-breaks-chiplet-memory-wall-with-standard-packaging/"
+                        target="_self">
+                        <h3>Eliyan Breaks Chiplet Memory Wall With Standard Packaging</h3>
+                    </a>
+                    <h4 style="color: darkgrey;">02.05.2024</h4>
+                </div>
+                <hr>
+                <div class="latestNews">
+                    <a href="https://www.eetimes.com/eliyan-breaks-chiplet-memory-wall-with-standard-packaging/"
+                        target="_self">
+                        <h3>Eliyan Breaks Chiplet Memory Wall With Standard Packaging</h3>
+                    </a>
+                    <h4 style="color: darkgrey;">02.05.2024</h4>
+                </div>
+                <hr>
+                <div class="latestNews">
+                    <a href="https://www.eetimes.com/eliyan-breaks-chiplet-memory-wall-with-standard-packaging/"
+                        target="_self">
+                        <h3>Eliyan Breaks Chiplet Memory Wall With Standard Packaging</h3>
+                    </a>
+                    <h4 style="color: darkgrey;">02.05.2024</h4>
+                </div>
+                <hr>
+                <div class="latestNews">
+                    <a href="https://www.eetimes.com/eliyan-breaks-chiplet-memory-wall-with-standard-packaging/"
+                        target="_self">
+                        <h3>Eliyan Breaks Chiplet Memory Wall With Standard Packaging</h3>
+                    </a>
+                    <h4 style="color: darkgrey;">02.05.2024</h4>
+                </div>
+            </div>
+
+            <!-- Left- Right(Center of the page) -->
+            <div class="left-right">
+                <img src="./Gallery/online-shopping-7688529_1280.webp" alt="Work Imge"
+                    style="border-radius: 4px; width: 600px;height: 500px;">
+                <br>
+                <br>
+                <a href="https://www.msn.com/en-ph/money/topstories/300-billion-electronics-production-in-few-years-a-realistic-achievable-target-it-minister/ar-BB1i4Lu7"
+                    target="_self">
+                    <h1>$300 billion electronics production in few years a realistic, achievable target: IT Minister
+                    </h1>
+                    <h3>India is setting its sights on achieving a landmark $300 billion electronics production target,
+                        including $100 billion in exports, in the near future, according to Ashwini Vaishnaw, Union
+                        Minister for Electronics and IT and Railways.</h3>
+                </a>
+            </div>
+        </div>
+
+        <div class="right">
+            <!-- Image Card -->
+            <h3>Top Stories</h3>
+            <div class="image-card">
+                <div class="image-card-media">
+                    <img src="https://assets.aboutamazon.com/dims4/default/e731c91/2147483647/strip/true/crop/1125x1125+438+0/resize/100x100!/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2F2c%2F16%2F6451724948c48c302e889f617704%2F020224-romcomvday-standardhero-v1-2000x1125.jpg"
+                        alt="Romantic comedy">
+                </div>
+                <div class="image-card-content">
+                    <div class="image-card-title">
+                        <span>20 perfect rom-coms to watch on Prime Video for Valentine’s Day</span>
+                    </div>
+                    <a class="image-card-link"
+                        href="https://www.aboutamazon.com/news/entertainment/best-rom-coms-prime-video" target="_blank"
+                        rel="noopener noreferrer">
+                        Read More
+                    </a>
+                </div>
+            </div>
+            <br>
+            <div class="image-card">
+                <div class="image-card-media">
+                    <img src="https://assets.aboutamazon.com/dims4/default/e731c91/2147483647/strip/true/crop/1125x1125+438+0/resize/100x100!/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2F2c%2F16%2F6451724948c48c302e889f617704%2F020224-romcomvday-standardhero-v1-2000x1125.jpg"
+                        alt="Romantic comedy">
+                </div>
+                <div class="image-card-content">
+                    <div class="image-card-title">
+                        <span>20 perfect rom-coms to watch on Prime Video for Valentine’s Day</span>
+                    </div>
+                    <a class="image-card-link"
+                        href="https://www.aboutamazon.com/news/entertainment/best-rom-coms-prime-video" target="_blank"
+                        rel="noopener noreferrer">
+                        Read More
+                    </a>
+                </div>
+            </div>
+            <br>
+            <div class="image-card">
+                <div class="image-card-media">
+                    <img src="https://assets.aboutamazon.com/dims4/default/e731c91/2147483647/strip/true/crop/1125x1125+438+0/resize/100x100!/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2F2c%2F16%2F6451724948c48c302e889f617704%2F020224-romcomvday-standardhero-v1-2000x1125.jpg"
+                        alt="Romantic comedy">
+                </div>
+                <div class="image-card-content">
+                    <div class="image-card-title">
+                        <span>20 perfect rom-coms to watch on Prime Video for Valentine’s Day</span>
+                    </div>
+                    <a class="image-card-link"
+                        href="https://www.aboutamazon.com/news/entertainment/best-rom-coms-prime-video" target="_blank"
+                        rel="noopener noreferrer">
+                        Read More
+                    </a>
+                </div>
+            </div>
+            <br>
+            <div class="image-card">
+                <div class="image-card-media">
+                    <img src="https://assets.aboutamazon.com/dims4/default/e731c91/2147483647/strip/true/crop/1125x1125+438+0/resize/100x100!/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2F2c%2F16%2F6451724948c48c302e889f617704%2F020224-romcomvday-standardhero-v1-2000x1125.jpg"
+                        alt="Romantic comedy">
+                </div>
+                <div class="image-card-content">
+                    <div class="image-card-title">
+                        <span>20 perfect rom-coms to watch on Prime Video for Valentine’s Day</span>
+                    </div>
+                    <a class="image-card-link"
+                        href="https://www.aboutamazon.com/news/entertainment/best-rom-coms-prime-video" target="_blank"
+                        rel="noopener noreferrer">
+                        Read More
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <hr>
+    <!-- ----------------------------------====== Trending Products using API======-------------------------- -->
+    <h1 class="Heading">Trending Products</h1>
+
+    <div id="cards">
+    </div>
+
+    <!-- --------------------------------------------------------------Footer------------------------------------------- -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Affiliate Program</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Order Status</a></li>
+                        <li><a href="#">Payment Options</a></li>
+
+
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Online Shop</h4>
+                    <ul>
+                        <li><a href="#">Watch</a></li>
+                        <li><a href="#">Bag</a></li>
+                        <li><a href="#">Shoes</a></li>
+                        <li><a href="#">Dress</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="foot">
+            <p>&copy; 2024 TEAM. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./about us.js"></script>
+</body>
+
+</html>
